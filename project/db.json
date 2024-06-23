@@ -1,0 +1,112 @@
+{
+  "sanpham": [
+    {
+      "id": "af46",
+      "tensp": "Samsung Galaxy",
+      "giasp": 12324,
+      "mota": "hddhxh",
+      "hinh": "sp8.jpg",
+      "ngay": "2018-01-13",
+      "luocxem": 1609,
+      "idloai": "2"
+    },
+    {
+      "id": "7",
+      "tensp": "Áo thun nam",
+      "giasp": 300000,
+      "mota": "Áo sơ mi nam lịch lãm, phù hợp cho các buổi tiệc.",
+      "hinh": "sp3.jpg",
+      "ngay": "2022-04-03",
+      "luocxem": 269,
+      "idloai": "3"
+    },
+    {
+      "id": "e34d",
+      "tensp": "Áo nữ",
+      "giasp": 12324,
+      "mota": "hddhxh",
+      "hinh": "sp7.jpg",
+      "ngay": "2008-02-01",
+      "luocxem": 20,
+      "idloai": "2"
+    },
+    {
+      "id": "2",
+      "tensp": "Áo thun nana",
+      "giasp": 500000,
+      "mota": "hddhxh",
+      "hinh": "sp5.jpg",
+      "ngay": "2008-04-01",
+      "luocxem": 389,
+      "idloai": "1"
+    },
+    {
+      "id": "789d",
+      "tensp": "cô",
+      "giasp": 1234,
+      "hinh": "sp8.jpg",
+      "ngay": "2009-05-01",
+      "idLoai": "3"
+    },
+    {
+      "id": "a514",
+      "tensp": "cô nam",
+      "giasp": 213234,
+      "mota": "ko biết",
+      "hinh": "sp9.jpg",
+      "ngay": "2005-05-01",
+      "idLoai": "3"
+    }
+  ],
+  "loaisp": [
+    {
+      "id": "1",
+      "tenLoai": "Áo thể thao",
+      "soSP": 50
+    },
+    {
+      "id": "2",
+      "tenLoai": "Áo ba lỗ",
+      "soSP": 40
+    },
+    {
+      "id": "3",
+      "tenLoai": "áo đi chơi",
+      "soSP": 30
+    },
+    {
+      "id": "4",
+      "tenLoai": "áo mặt ở nhà",
+      "soSP": 20
+    }
+  ],
+  "email": [
+    {
+      "id": "1",
+      "email": "admin@gmail.com",
+      "matkhau": "123",
+      "quyen": 1
+    },
+    {
+      "id": "2",
+      "email": "trung@gmail.com",
+      "matkhau": "123",
+      "quyen": 2
+    },
+    {
+      "id": "3",
+      "email": "lam@gmail.com",
+      "matkhau": "123",
+      "quyen": 1
+    },
+    {
+      "id": "4",
+      "email": "jin@gmail.com",
+      "matkhau": "123",
+      "quyen": 1
+    }
+  ],
+  "profile": {
+    "tri": "typicode"
+  }
+}

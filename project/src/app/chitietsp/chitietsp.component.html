@@ -1,0 +1,9 @@
+<p>chitietsp works!</p>
+<div *ngIf="sanPham">
+  <h1>{{ sanPham.tensp }}</h1>
+  <p>Giá: {{ sanPham.giasp }}đ</p>
+  <p>Mô tả: {{ sanPham.mota }}</p>
+  <p>Ngày: {{ sanPham.ngay }}</p>
+  <p>ID Loại: {{ sanPham.idloai }}</p>
+  <img [src]="'assets/img/' + sanPham.hinh" alt="{{ sanPham.tensp }}">
+</div>

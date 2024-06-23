@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+.category-card {
+  position: relative;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.category-card img {
+  width: 100%;
+  height: auto;
+}
+.category-card .card-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+}

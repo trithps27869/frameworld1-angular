@@ -1,0 +1,30 @@
+<div class="container py-5">
+
+  <h1 style="text-align: center;">Thêm sản phẩm</h1>
+  <div class="d-flex justify-content-center align-items-center">
+  <form #frmSP="ngForm" class="col-8 border border-primary m-3 p-3" (ngSubmit)="spthem(frmSP.value)" >
+    <p> Tên Sản Phẩm
+      <input type="text" name="tensp" ngModel class="form-control border-success shadow-none" required>
+    </p>
+    <p> Giá Sản Phẩm
+      <input type="number" name="giasp" ngModel class="form-control border-success shadow-none" required>
+    </p>
+    <p> Mô Tả
+      <input type="text" name="mota" ngModel class="form-control border-success shadow-none" required>
+    </p>
+    <p> Hình Ảnh
+      <input type="text" name="hinh" ngModel class="form-control border-success shadow-none" required>
+    </p>
+    <p> Ngày
+      <input type="date" name="ngay" ngModel class="form-control border-success shadow-none" required>
+    </p>
+    <p> ID Loại
+      <input type="text" name="idLoai" ngModel class="form-control border-success shadow-none" required>
+    </p>
+    <div class="text-center"> <!-- Thêm lớp CSS để căn giữa nút -->
+      <button type="submit" class="btn btn-success px-4">Thêm Sản Phẩm</button>
+    </div>
+  </form>
+</div>
+</div>
+

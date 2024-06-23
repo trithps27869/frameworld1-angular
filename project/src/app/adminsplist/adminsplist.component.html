@@ -1,0 +1,81 @@
+<p>adminsplist works!</p>
+
+<section style="background-color: #eee;">
+  <div class="container py-5">
+    <div class="row">
+      <!-- sidebar.component.html -->
+      <div class="col-md-3 ">
+        <div class="sidebar d-flex flex-column p-3 bg-dark text-white flex-column h-100">
+          <h2 class="text-center" routerLink="/">GUUNI</h2>
+          <div class="text-center mb-4">
+            <!-- <img src="assets/admin-avatar.png" alt="Admin" class="rounded-circle" width="100"> -->
+            <p class="mt-2">tri trần</p>
+            <p>Xin chào Quản lý</p>
+          </div>
+          <ul class="nav flex-column">
+            <li class="nav-item"><a href="#" class="nav-link text-white"><i class="fas fa-chart-line"></i> Thống kê</a></li> <br>
+            <li class="nav-item"><a href="#" class="nav-link text-white"><i class="fas fa-list"></i> Danh mục</a></li><br>
+            <li class="nav-item"><a href="#" class="nav-link text-white"><i class="fas fa-box"></i> Sản phẩm</a></li><br>
+            <li class="nav-item" routerLink="adminsplist"><a href="#" class="nav-link text-white active"><i class="fas fa-user"></i> Tài khoản</a></li><br>
+            <li class="nav-item"><a href="#" class="nav-link text-white"><i class="fas fa-comments"></i> Bình luận</a></li><br>
+            <li class="nav-item"><a href="#" class="nav-link text-white"><i class="fas fa-newspaper"></i> Loại bài viết</a></li><br>
+            <li class="nav-item"><a href="#" class="nav-link text-white"><i class="fas fa-pen"></i> Bài viết</a></li><br>
+          </ul>
+        </div>
+      </div>
+      <!-- account-list.component.html -->
+      <div class="col-md-9">
+        <div class="content" style="padding: 1rem;">
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-envelope"></i>Thống kê /</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-bell"></i>Sản phẩm</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-cog"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <div class="row d-flex justify-content-between align-items-center mb-3" style="padding: 20px;">
+            <h2 class="col-md-4">Sản phẩm</h2>
+            <button class="btn btn-primary mb-3 col-md-2 ms-auto"  style="margin-top: 15px;" (click)="themsanpham()">Thêm sản phẩm</button>
+          </div>
+
+          <div class="table-responsive">
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>STT</th>
+                  <th>Tên sản phẩm</th>
+                  <th>Ảnh sản phẩm</th>
+                  <th>Giá sản phẩm</th>
+                  <th>ID loại sản phẩm</th>
+                  <th>Edit</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let sp of listSanPham; let i = index">
+                  <td>{{ i + 1 }}</td>
+                  <td>{{ sp.tensp }}</td>
+                  <td><img src="assets/img/{{sp.hinh}}" width="150px"></td>
+                  <td>{{ sp.giasp }}</td>
+                  <td>{{ sp.idloai }}</td>
+                  <td>
+                    <div class="w-25 text-end">
+                      <button class="btn btn-info btn-sm" (click)="suaSP(sp.id)">sửa</button>
+                      <button class="btn btn-danger btn-sm" (click)="xoaSP(sp.id)">Xóa</button>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
